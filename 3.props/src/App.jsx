@@ -1,16 +1,16 @@
 import { useState } from 'react'
 import './App.css'
+import Container from './Container';
 import Product from './Product'
 
 function App() {
 
-const productName= "freezer";
 
   return (
   <div>
-    <Product productName= "shoe" price= {3000} />
-    <hr/>
-    <Product productName={productName} price= {2000}/>
+    <Container>
+      <Product/>
+    </Container>
   </div>
   )
 }

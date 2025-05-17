@@ -1,15 +1,15 @@
 import React from "react";
 
-function Product(props) {
-  const {productName , price} = props;
+function Product({productName, price}) {
+  // const {productName , price} = props;
     return (
     
     <div>
       <div> ABOUT THE PRODUCTS </div>
 
       <div>
-        <div>ProductName : {props.productName}</div>
-        <div>Price : {props.price} TL </div>
+        <div>ProductName : {productName}</div>
+        <div>Price : {price} TL </div>
       </div>
 
     </div>
