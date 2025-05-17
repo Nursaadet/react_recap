@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { Children } from 'react'
 
-function Container(props) {
-    console.log(props)
+function Container({children}) {
+    console.log(children)
   return (
     <div>
       <div>container component worked</div>
+      {children}
     </div>
   )
 }

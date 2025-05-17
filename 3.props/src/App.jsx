@@ -9,7 +9,7 @@ function App() {
   return (
   <div>
     <Container>
-      <Product/>
+      <Product productName= "telephone" price={20500} />
     </Container>
   </div>
   )

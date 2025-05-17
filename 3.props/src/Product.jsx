@@ -8,7 +8,7 @@ function Product({productName, price}) {
       <div> ABOUT THE PRODUCTS </div>
 
       <div>
-        <div>ProductName : {productName}</div>
+        <div>Product Name : {productName}</div>
         <div>Price : {price} TL </div>
       </div>
 
