@@ -1,23 +1,27 @@
 import { useState } from "react";
 
 function App() {
-  //useState = hooks
+  //When you change the value of a state using the set method, the component is re-rendered.
 
-  const [firstName, setFirstName] = useState("Saadet");
-  // const [lastName, setLastName] = useState("Özdemir");
-  const [names, setNames] = useState(["Ali, Sevinç, Mine, Jale"]);
-  const [userInfo, setUserInfo] = useState({userName:"sNur" , password:"1212"})
-  const [show, setShow] =useState(true);
+const [count, setCount] = useState(0)
 
-  // handleChange = () => {
-  //   debugger;
-  //   setFirstName("Elif");
-  // };
-  console.log(names)
+const increase=()=> {
+setCount(count + 1)
+}
+
+const reduce=()=>{
+  setCount(count - 1)
+}
+
+console.log("component has been rendered")
 
   return (
     <div>
-    {show ? <div>{userInfo.userName} {userInfo.password} </div> : <div>Don't show</div>}
+    <div>{count}</div>
+    <div> <button onClick = {increase} >Increase</button>
+    </div>
+    <div> <button onClick = {reduce} >reduce</button>
+    </div>
     </div>
   );
 }
